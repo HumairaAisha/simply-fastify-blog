@@ -1,0 +1,36 @@
+{
+  "name": "growsmart-fastify-server",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "start": "tsx src/index.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@fastify/cookie": "^11.0.2",
+    "@fastify/cors": "^11.0.1",
+    "@fastify/type-provider-typebox": "^5.1.0",
+    "@prisma/client": "^6.10.1",
+    "@sinclair/typebox": "^0.34.33",
+    "bcryptjs": "^3.0.2",
+    "fastify": "^5.3.3",
+    "jsonwebtoken": "^9.0.2",
+    "nodemailer": "^7.0.3"
+  },
+  "devDependencies": {
+    "@types/bcryptjs": "^2.4.6",
+    "@types/jsonwebtoken": "^9.0.9",
+    "@types/node": "^22.15.29",
+    "@types/nodemailer": "^6.4.17",
+    "prisma": "^6.10.1",
+    "prismabox": "^1.1.24",
+    "ts-node": "^10.9.2",
+    "tsx": "^4.19.4",
+    "typescript": "^5.8.3"
+  }
+}
