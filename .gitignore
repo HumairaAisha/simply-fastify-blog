@@ -1,6 +1,3 @@
 node_modules
 .env
-/prisma
-
-!/prisma/migrations
-!/prisma/schema.prisma
+/prisma/dev.db
