@@ -11,12 +11,15 @@ import {
 import { sendEmail } from "src/utils/mail";
 import { prisma } from "src/utils/prisma";
 import { FastifyRequest } from "fastify/types/request";
+import { configDotenv } from "dotenv";
 
 export type RegisterUserType = Static<typeof RegisterUserSchema>;
 export type LoginUserType = Static<typeof LoginUserSchema>;
 export type LogoutType = Static<typeof LogoutSchema>;
 export type ForgotPasswordType = Static<typeof ForgotPasswordSchema>;
 export type ResetPasswordType = Static<typeof ResetPasswordSchema>;
+
+configDotenv();
 
 const JWT_SECRET = process.env.JWT_SECRET || "your-secret";
 const JWT_REFRESH_SECRET =

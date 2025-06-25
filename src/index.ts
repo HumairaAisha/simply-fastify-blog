@@ -1,10 +1,13 @@
 import Fastify from "fastify";
+import { configDotenv } from "dotenv";
 import { TypeBoxTypeProvider } from "@fastify/type-provider-typebox";
 import cookie from "@fastify/cookie";
 import cors from "@fastify/cors";
 import authRoutes from "./auth/auth.route.js";
 import postRoutes from "./post/post.routes.js";
 import { createSuperAdmin } from "./auth/auth.controller.js";
+
+configDotenv();
 
 const app = Fastify({
   logger: true,

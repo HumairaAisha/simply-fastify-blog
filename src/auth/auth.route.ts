@@ -25,7 +25,7 @@ async function authRoutes(fastify: FastifyInstance) {
     { schema: RegisterUserSchema },
     async (request, reply) => {
       try {
-        const user = await registerUser(request.body);
+        const user = await registerUser(request.body, "VIEWER");
         return { message: "User registered", data: user };
       } catch (error) {
         request.log.error(error);
