@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+*{
+   background-color: #111828;
+   color: white;
+   font-family: "Rubik", sans-serif;
+}
+.container{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   padding-top: 5rem;
+   
+}
+
+.hero-page h2{
+   text-align: center;
+   font-size: 2rem;
+   font-weight: 600;
+}
+
+.btn-login, .btn-register{
+   background-color: white;
+   color: #111828;
+   border: none;
+   padding: 0.7rem 1.5rem;
+   border-radius: 0.3rem;
+   font-size: 1rem;
+   cursor: pointer;
+   text-decoration: none;
+   
+}
+.btn-login:hover, .btn-register:hover{
+   background-color: #111828;
+   color: white;
+   border: 1px solid white;
+}
+
+/*Login page*/
+.form h2, h3, p{
+   text-align: center;
+}
+.form h3{
+   font-size: 1rem;
+   font-weight: 500;
+}
+.form p{
+   font-size: 0.8rem;
+   font-weight: 200;
+}
+.reg{
+   color: orchid;
+}
+.login-info{
+   font-size: 0.8rem;
+   font-weight: 300;
+  
+}
+.email-info{
+   margin: 1rem 0;
+}
+.input-info{
+   background-color: #212838;
+   margin-top: 0.3rem;
+   border: none;
+   border-radius: 0.3rem;
+   width: 250px;
+   height: 30px;
+}
+.sign{
+   display: block;
+   align-items: center;
+   background-color: white;
+   color: #111828;
+   text-align: center;
+   margin-top: 2rem;
+   text-decoration: none;
+   padding: 0.4rem 6.5rem;
+   border-radius: 0.3rem;
+   margin-top: 0.5rem;
+   font-size: 0.8rem;
+}
+
+/*Registeration*/
