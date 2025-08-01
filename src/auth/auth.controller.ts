@@ -108,7 +108,7 @@ export async function loginUser({ email, password }: LoginUserType) {
     return {
       accessToken,
       refreshToken,
-      user: { id: user.id, email: user.email },
+      user: { id: user.id, email: user.email, role: user.role },
     };
   } catch (error) {
     console.error("Error logging in:", error);

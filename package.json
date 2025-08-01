@@ -17,11 +17,13 @@
     "@fastify/type-provider-typebox": "^5.1.0",
     "@prisma/client": "^6.10.1",
     "@sinclair/typebox": "^0.34.33",
+    "@tailwindcss/cli": "^4.1.11",
     "bcryptjs": "^3.0.2",
     "dotenv": "^16.5.0",
     "fastify": "^5.3.3",
     "jsonwebtoken": "^9.0.2",
-    "nodemailer": "^7.0.3"
+    "nodemailer": "^7.0.3",
+    "tailwindcss": "^4.1.11"
   },
   "devDependencies": {
     "@types/bcryptjs": "^2.4.6",

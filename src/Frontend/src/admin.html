@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link href="./output.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<title>InsightSphere</title>
+</head>
+<body class="bg-teal-950 p-2">
+   <header class="sticky top-0 z-50 p-2">
+      <nav class="bg-slate-300">
+      <div class="flex justify-between">
+      <h2 class="animate-pulse delay-100 duration-100 ease-in p-2 text-xl md:text-2xl text-teal-900 font-bold">InsightSphere</h2>
+      <ul class="hidden md:flex space-x-10 p-3">
+         <li><a href="index.html" class="text-teal-950 hover:bg-teal-950 hover:text-white rounded-md p-2">Home</a></li>
+         <li><a href="about.html" class="text-teal-950 hover:bg-teal-950 hover:text-white rounded-md p-2">About</a></li>
+         <li><a href="#" onclick="logout()" class="text-teal-950 hover:bg-red-800 hover:text-white rounded-md p-2">Logout</a></li>
+      </ul>
+      <button class="bg-slate-500 text-white p-1.5 cursor-pointer rounded-3xl m-2 transition duration-150 ease-in-out"  onclick="openForm()">New Post</button>
+      
+      </div>
+      </nav>
+   </header>
+   <main>
+      <p id="errorMsg"></p>
+         <div class="p-4 hidden justify-center items-center fixed inset-4 w-min" id="postForm">
+         <form class="flex flex-col items-center justify-center bg-slate-300 bg-opacity-50">
+            <h1 class="text-teal-900 font-bold md:text-xl mt-2">Create New Post</h1>
+            <input type="text" name="title" class="w-lg h-10 rounded border-2 border-teal-900 m-2 font-bold" id="postTitle" placeholder="Post Title" >
+            <textarea name=""  class="w-lg h-80 rounded border-2 border-teal-900 m-2" id="postContent" placeholder="Post Content"></textarea>
+            <div>
+               <button type="submit" class="text-[#E5E7EB] rounded bg-teal-900 p-1.5 m-2 cursor-pointer" id="btnSubmit">Create Post</button>
+               <button type="button" class="rounded text-[#E5E7EB] bg-red-800 p-1.5 m-2 cursor-pointer" onclick="closeForm()">Close</button>
+            </div>
+         </form>
+      </div>
+      </div>
+      
+      <!-- <table class="w-full mt-6 bg-white rounded shadow">
+               <th>
+                  <tr>
+                  <th class="p-2 text-left text-teal-900">Title</th>
+                  <th class="p-2 text-left text-teal-900">Content</th></tr>
+                  
+               </th>
+               <tbody id="postList" class="text-sm"></tbody>
+            </table> -->
+
+
+            <div class="space-y-4 mt-6" id="postList"></div>
+           <!--  <div class="fixed hidden bg-slate-300 bg-opacity-50">
+               <div>
+                  <h2>Edit Post</h2>
+                  <form id="editpost">
+                     <input type="text" name="" id="">
+                     <textarea name="" id=""></textarea>
+                     <div>
+                        <button type="submit">Save</button>
+                        <button type="button">Cancel</button>
+                     </div>
+                  </form>
+               </div>
+
+            </div> -->
+      
+      
+   </main>
+   <script src="jsFiles/admin.js"></script>
+</body>
+</html>

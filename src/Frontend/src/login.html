@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link href="./output.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<title>InsightSphere</title>
+</head>
+<body class="bg-teal-950 pt-8">
+   <main>
+      <div class="text-white pt-6 flex flex-col items-center">
+      <h1 class="animate-pulse delay-100 duration-200 ease-in text-3xl md:text-4xl font-bold text-center p-5">InsightSphere</h1>
+      <h2 class="text-center pb-2 font-semibold md:text-2xl">Welcome Back</h2>
+         
+            <form class="" id="form">
+               <h3 class="text-center font-medium md:text-xl pb-2">Login to your account</h3>
+               <h4 class="text-center font-normal md:text-xs pb-6">Don't have an account <a href="register.html" class="text-gray-300 underline">Register</a></h4>
+
+               <label for="email" class="flex pb-2 md:text-lg">Email Address</label>
+               <input type="text" name="" id="email" class="w-80 border border-gray-400 rounded" placeholder="name@gmail.com">
+               <span id="errorEmail"></span>
+
+               <label for="password" class="flex pb-2 pt-6">Password</label>
+               <input type="password" name="" id="pswd" class="w-80 border border-gray-400 rounded">
+               <span id="errorPswd"></span>
+
+               <button type="submit" class="flex justify-center p-0.5 w-80 bg-white text-teal-900 rounded mt-3 cursor-pointer">Sign In</button>
+
+            </form>
+         </div>
+         <p id="message-response" class="text-white text-center"></p>
+      </div>
+   </main>
+   
+   <script src="jsFiles/login.js"></script>
+</body>
+</html>

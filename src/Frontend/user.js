@@ -102,7 +102,7 @@ async function post() {
 
 
 
-await login()
-//await register()
+//await login()
+await register()
 
 //await createPost()

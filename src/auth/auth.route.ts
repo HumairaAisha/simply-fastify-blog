@@ -16,7 +16,8 @@ import {
   LogoutSchema,
   ResetPasswordSchema,
 } from "./auth.schemas";
-import { getErrorMessage } from "src/utils/error";
+import { getErrorMessage } from "../utils/error";
+
 import { requireAdmin, verifyToken } from "./auth.middleware";
 
 async function authRoutes(fastify: FastifyInstance) {
