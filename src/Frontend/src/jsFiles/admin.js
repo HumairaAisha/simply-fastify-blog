@@ -189,6 +189,10 @@ function editPost(id, title, content) {
 
 //delete post
 async function deletePost(id) {
+   const confirmed = window.confirm("Are you sure you want to delete post")
+   if (!confirmed) {
+      return
+   }
    const token = localStorage.getItem("jwtToken")
    try {
       const response = await fetch(`http://127.0.0.1:3000/posts/${id}`, {
@@ -198,7 +202,6 @@ async function deletePost(id) {
       });
       const data = await response.json()
       if (response.ok) {
-         alert("Post Deleted")
          await getPost()
 
       } else{
@@ -216,7 +219,10 @@ async function deletePost(id) {
 
 //logout
 async function logout() {
-   
+   const confirm = window.confirm("Are you sure you want to log out?")
+   if (!confirm) {
+      return
+   }
    const token = localStorage.getItem('jwtToken')
    let userId = localStorage.getItem('userId')
    try {

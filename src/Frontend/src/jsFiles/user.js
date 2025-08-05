@@ -92,7 +92,10 @@ function fetchPost(posts) {
 
 //logout
 async function logout() {
-   
+   const confirmed = window.confirm("Are you sure you want to log out?")
+   if (!confirmed) {
+      return
+   }
    const token = localStorage.getItem('jwtToken')
    let userId = localStorage.getItem('userId')
    try {
